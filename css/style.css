@@ -7,6 +7,7 @@ h1, h2, h3{margin: 0; padding: 0;}
 ol, ul{list-style: none;}
 a{text-decoration: none; color: inherit;}
 a:hover{color: #f9014d;}
+img{max-width: 100%; border: none;}
 
 
 /*GERAIS*/
@@ -14,10 +15,116 @@ a:hover{color: #f9014d;}
     float: left;
     width: 100%;
 }
+.section-header{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.section-header h1{
+    font-size: 38px;
+    font-weight: normal;
+}
+
 .content{
     max-width: 960px;
     width: 90%;
     margin: 0 auto;
+}
+.row{
+    float: left;
+    margin: 0 auto;
+}
+
+.box{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    border-radius: 15px;
+    width: 400px;
+}
+.box:hover .box-detalhes-info{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.box-name{
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #f9014d;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.box-cover{
+    font-size: 0;
+    line-height: 1em;
+}
+.box-cover img{
+    width: 100%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.box-detalhes{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+
+}
+.box-detalhes:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    visibility: hidden;
+    background: linear-gradient(to bottom,transparent, #000);
+
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transform: translate(0,50%);
+    transform: translate(0,50%);
+}
+.box-detalhes-info{
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transform: translate(0,50%);
+    transform: translate(0,50%);
+}
+.box-detalhes-info h1{
+    font-size: 20px;
+}
+
+/*box:hover*/
+.box:hover .box-cover img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.box:hover .box-detalhes:before,
+.box:hover .box-detalhes-info{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
 }
 
 /*HEADER*/

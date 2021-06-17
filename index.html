@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Projeto Portifólio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+<head>
+    <title>Projeto Portifólio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        <header class="header">
-            <div class="content">
-                <div class="logo fl-left">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Portifólio" />
-                    </a>
-                </div>
-                <a href="#" class="nav-toggle fl-right">
-                    <i class="fas fa-bars"></i> MENU
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="content">
+            <div class="logo fl-left">
+                <a href="#">
+                    <img src="images/logo.png" alt="Portifólio" />
                 </a>
-                <nav class="nav">
-                    <p class="text-right">
-                        <span class="nav-close">
-                            <i class="fas fa-times"></i>
-                        </span>
-                    </p>
-                    <ul>
-                        <li><a href="#">Barcos e lanchas</a></li>
-                        <li><a href="#">Destaques</a></li>
-                        <li><a href="#">Testemunhas</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
+            <a href="#" class="nav-toggle fl-right">
+                <i class="fas fa-bars"></i> MENU
+            </a>
+            <nav class="nav">
+                <p class="text-right">
+                    <span class="nav-close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </p>
+                <ul>
+                    <li><a href="#">Barcos e lanchas</a></li>
+                    <li><a href="#">Destaques</a></li>
+                    <li><a href="#">Testemunhas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <section class="section">
-            <div class="search-box">
-                <header>
-                    <h1>Wilembergson Alfredo da Silva</h1>
-                    <p class="tagline">Projetos pessoais</p>
-                </header>
+    <section class="section">
+        <div class="search-box">
+            <header>
+                <h1>Wilembergson Alfredo da Silva</h1>
+                <p class="tagline">Projetos pessoais</p>
+            </header>
 
-                <form name="formSearch" method="post" action="">
-                    <input type="search" name="busca" id="busca" placeholder="Pesquisar" />
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </form>
+            <form name="formSearch" method="post" action="">
+                <input type="search" name="busca" id="busca" placeholder="Pesquisar" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="estatisticas">
+            <div class="estatisticas-item">
+                <span>2,500</span>
+                <p>lorem</p>
             </div>
+            <div class="estatisticas-item">
+                <span>10,00</span>
+                <p>ipsum</p>
+            </div>
+            <div class="estatisticas-item">
+                <span>1,500</span>
+                <p>dolor</p>
+            </div>
+            <div class="estatisticas-item">
+                <span>15,000</span>
+                <p>sit amet</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="estatisticas">
-                <div class="estatisticas-item">
-                    <span>2,500</span>
-                    <p>lorem</p>
-                </div>
-                <div class="estatisticas-item">
-                    <span>10,00</span>
-                    <p>ipsum</p>
-                </div>
-                <div class="estatisticas-item">
-                    <span>1,500</span>
-                    <p>dolor</p>
-                </div>
-                <div class="estatisticas-item">
-                    <span>15,000</span>
-                    <p>sit amet</p>
+    <section class="section">
+        <div class="content">
+            <header class="section-header">
+                <h1>Escolha seu destino preferido</h1>
+                <p>Loren ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            </header>
+
+            <div class="row">
+                <div class="destinos-col">
+                    <div class="box">
+                        <div class="box-name">
+                            Lanchas
+                        </div>
+                        
+                        <div class="box-cover">
+                            <img src="images/destino-1.jpg" alt="" />
+                        </div>
+
+                        <div class="box-detalhes">
+                            <div class="box-detalhes-info">
+                                <h2>Figueira da Fox</h2>
+                                <p>Portugal</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+
+    </section>
+</body>
+
 </html>
