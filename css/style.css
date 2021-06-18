@@ -36,7 +36,24 @@ img{max-width: 100%; border: none;}
 }
 .row{
     float: left;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.loadmore{
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.loadmore:hover{
+    color: #a70606;
+    border: 1px solid #a70606;
 }
 
 .box{
@@ -140,6 +157,10 @@ img{max-width: 100%; border: none;}
 }
 .header .logo img{
     max-width: 150px;
+}
+.header.fixed{
+    background: #293541;
+    padding: 10px 5px 0;
 }
 
 /*SEARCH E ESTATISTICAS*/
@@ -267,7 +288,7 @@ img{max-width: 100%; border: none;}
     }
     .header .nav{
         float: right;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .header .nav ul li{
         display: inline-block;
