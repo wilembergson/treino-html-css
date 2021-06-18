@@ -15,10 +15,14 @@ img{max-width: 100%; border: none;}
     float: left;
     width: 100%;
 }
-.section-header{
+.section:not(:first-of-type){
     margin-top: 40px;
+}
+.section-header{
+    margin-bottom: 40px;
     text-align: center;
     font-size: 20px;
+
 }
 .section-header h1{
     font-size: 38px;
@@ -41,7 +45,7 @@ img{max-width: 100%; border: none;}
     overflow: hidden;
     -webkit-border-radius: 5px;
     border-radius: 15px;
-    width: 400px;
+    cursor: pointer;
 }
 .box:hover .box-detalhes-info{
     opacity: 1;
@@ -211,6 +215,12 @@ img{max-width: 100%; border: none;}
     font-size: 20px;
 }
 
+
+/*DESTINOS*/
+.destinos-col{
+    margin-bottom: 20px;
+}
+
 /*BREACKPOINTS MÁXIMOS*/
 @media (max-width: 767.9px){
     .nav-toggle{
@@ -282,6 +292,31 @@ img{max-width: 100%; border: none;}
     }
     .estatisticas-item:not(:last-of-type){
         border-right: 1px solid #ccc;
+    }
+    .destinos-col{
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+    }
+    .destinos-col:nth-child(odd){
+        margin-right: 0;
+    }
+    .destinos-col:first-child{
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px){
+    .destinos-col:nth-last-child(odd),
+    .destinos-col{
+        width: 32%;
+        margin-right: 2%;
+    }
+    .destinos-col:nth-of-type(3n+2){
+        margin-right: 0;
+    }
+    .destinos-col:first-child{
+        width: 66%;
     }
 }
 
