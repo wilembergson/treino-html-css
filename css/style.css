@@ -37,7 +37,6 @@ img{max-width: 100%; border: none;}
 .row{
     float: left;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .loadmore{
@@ -241,6 +240,93 @@ img{max-width: 100%; border: none;}
 .destinos-col{
     margin-bottom: 20px;
 }
+.paralax{
+    text-align: center;
+    color: #fff;
+    padding: 160px 0;
+    margin: 60px 0;
+    font-size: 23px;
+    background-image: url(../images/bg-paralax.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    float: left;
+    width: 100%;
+}
+.paralax h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.paralax button{
+    font-size: 20px;
+    background: #f9014d;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.paralax button:hover{
+    color: #af1241;
+    background: #df4f7a;
+}
+
+/*DESTAQUES*/
+.destaques-col{
+    margin-bottom: 20px;
+}
+
+/*TESTEMUNHAS*/
+.testemunhas{
+    padding: 100px 0;
+    margin: 60px 0;
+    background-image: url(../images/bg-testemunhas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testemunhas-article{
+    float: left;
+    background: rgba(255, 255, 255, .7);
+    width: 100%;
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.testemunhas-article h1{
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 8px solid #ccc;
+}
+.testemunhas-article .image{
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+}
+.testemunhas-article p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 83px;
+}
+.testemunhas-article .name{
+    color: #a70606;
+    font-weight: bold;
+}
 
 /*BREACKPOINTS MÁXIMOS*/
 @media (max-width: 767.9px){
@@ -322,8 +408,25 @@ img{max-width: 100%; border: none;}
     .destinos-col:nth-child(odd){
         margin-right: 0;
     }
-    .destinos-col:first-child{
-        width: 100%;
+
+    /*destaques*/
+    .destaques-col{
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        float: left;
+    }
+    .destaques-col:nth-of-type(2n+0){
+        margin-right: 0;
+    }
+    /*testemunhas*/
+    .testemunhas-article{
+        margin-right: 4%;
+        margin-bottom: 4%;
+        width: calc((100% - 8%) / 3);
+    }
+    .testemunhas-article:last-of-type{
+        margin-right: 0;
     }
 }
 
