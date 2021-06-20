@@ -282,7 +282,6 @@ img{max-width: 100%; border: none;}
 /*TESTEMUNHAS*/
 .testemunhas{
     padding: 100px 0;
-    margin: 60px 0;
     background-image: url(../images/bg-testemunhas.jpg);
     background-size: cover;
     background-position: center;
@@ -326,6 +325,24 @@ img{max-width: 100%; border: none;}
 .testemunhas-article .name{
     color: #a70606;
     font-weight: bold;
+}
+/*FOOTER*/
+.footer{
+    background: #181818;
+    float: left;
+    width: 100%;
+    color: #fff;
+    padding: 30px 0;
+}
+.footer-col{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.footer-col h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /*BREACKPOINTS MÁXIMOS*/
